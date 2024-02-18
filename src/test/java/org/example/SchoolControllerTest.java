@@ -46,7 +46,7 @@ public class SchoolControllerTest {
         School testSchool = new School(1, "First Location", "Mr. Roshan", "California");
         repository.save(testSchool);
 
-        String expected = "[{\"id\":1,\"name\":\"First Location\",\"principle\":\"Mr. Roshan\",\"address\":\"California\"}]";
+        String expected = "[{\"id\":1,\"name\":\"First Location\",\"principal\":\"Mr. Roshan\",\"address\":\"California\"}]";
         JSONAssert.assertEquals(expected, response.getBody(), false);
     }
 
